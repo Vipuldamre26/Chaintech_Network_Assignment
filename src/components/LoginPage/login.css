@@ -1,0 +1,78 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(234, 234, 234);
+}
+
+.main .form{
+    width: 30rem;
+    height: 30rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px 5px rgb(219, 219, 219);
+}
+
+.main .form:hover{
+    box-shadow: 1px 1px 5px 5px rgb(213, 213, 213);
+}
+
+.main .form .field{
+    width: 80%;
+    margin: 0.5rem auto;
+    height: 4rem;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .form .field input{
+    height: 2rem;
+    padding: 0.2rem 0.3rem;
+    border: 1px solid rgb(216, 216, 216);
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+}
+
+.main .form .field input:focus{
+    outline: none;
+}
+
+
+.main .form .field2{
+    width: 80%;
+    margin: 0.5rem auto;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: rgb(0, 0, 122);
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.main .form button{
+    width: 80%;
+    margin: 0.5rem auto;
+    height: 2.4rem;
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.main .form button:hover{
+    box-shadow: 1px 1px 10px 1px rgb(146, 146, 146);
+}
