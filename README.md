@@ -5,10 +5,11 @@ This project is a web application featuring user authentication with login and s
 
 ## Table of Contents
 - [Technologies Used](#HTML, CSS, JAVASCRIPT, REACT, REACT-ROUTER, REDUX, GIT, GITHUB, VERCEL)
-- [Components](#components)
-  - [Login Page](https://chaintech-network-assignment-ten.vercel.app/login/)
-  - [Signup Page](https://chaintech-network-assignment-ten.vercel.app/signup/)
+- Components
   - [Dashboard Page](https://chaintech-network-assignment-ten.vercel.app/)
+  - Login Page
+  - Signup Page
+  - Navbar
 
 ## Features
 - User authentication with email and password using localstorage.
