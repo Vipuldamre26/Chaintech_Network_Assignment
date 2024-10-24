@@ -29,8 +29,8 @@ const Signup = () => {
                 </div>
 
                 <div className="field2">
+                    <p className='para'>Already have account?</p>
                     <p  onClick={() => navigate('/login')}>Login</p>
-                    <p>forget password</p>
                 </div>
 
                 <button>Signup</button>

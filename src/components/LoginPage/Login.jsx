@@ -3,7 +3,7 @@ import './login.css';
 
 const Login = () => {
 
-    // navigate for routing the pages 
+    // navigate for routing the page
     const navigate = useNavigate();
 
     return (
