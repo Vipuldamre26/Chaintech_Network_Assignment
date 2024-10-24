@@ -7,14 +7,16 @@ import { submit } from '../../redux/slices/dataSlice';
 
 const Dashboard = () => {
 
+
+  // hooks 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [number, setNumber] = useState('');
   const [age, setAge] = useState('');
   const [disabled, setDisabled] = useState(true);
+  const data = useSelector(state => state.formData.data)
   
 
-  const data = useSelector(state => state.formData.data)
   // console.log(data);
 
   const dispatch = useDispatch();
@@ -38,6 +40,9 @@ const Dashboard = () => {
     redirect();
 
   }, [userData, navigate]);
+
+
+  // ******************************************************************************************
   
 
   useEffect(() => {

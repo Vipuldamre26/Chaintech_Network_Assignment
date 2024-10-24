@@ -11,6 +11,8 @@ const Login = () => {
     const navigate = useNavigate();
     const userData = JSON.parse(localStorage.getItem('userdata'));
 
+    // ***********************************************************************************
+
     useEffect(() => {
         if(userData && userData.length > 0){
             let timer = setTimeout(() => {
@@ -21,6 +23,8 @@ const Login = () => {
         }
     }, [userData, navigate])
 
+
+    // ***********************************************************************************
 
     const loginUser = (e) => {
 
@@ -33,6 +37,8 @@ const Login = () => {
             }, 2000)
         }
     }
+
+    // *****************************************************************************************
 
     return (
 
