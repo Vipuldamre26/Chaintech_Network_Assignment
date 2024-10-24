@@ -1,23 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 
-let userData = ['hello'];
+let userData = [];
 
 
-// const getUserData = () => {
+const getUserData = () => {
 
-//     if (localStorage.getItem('userData') === null) {
-//         localStorage.setItem('userData', JSON.stringify([]));
-//     }
-//     else {
-//         userData = JSON.parse(localStorage.getItem('userData'));
-//     }
+    if (localStorage.getItem('userdata') === null) {
+        localStorage.setItem('userdata', JSON.stringify([]));
+    }
+    else {
+        userData = JSON.parse(localStorage.getItem('userdata'));
+    }
 
-//     return userData;
+    return userData;
 
-// }
+}
 
-// let getData = getUserData();
+let getData = getUserData();
 
 const dataSlice = createSlice({
     name: 'data',

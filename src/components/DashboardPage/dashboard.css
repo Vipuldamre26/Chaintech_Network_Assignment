@@ -22,8 +22,29 @@
     margin: 0 2rem;
 }
 
+.dashboard .dashboard-main .row .item button{
+    width: 8rem;
+    height: 2rem;
+    margin: 3rem auto;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 1px rgb(214, 214, 214);
+}
+
+.dashboard .dashboard-main .row .item button:hover{
+    box-shadow: 1px 1px 5px 1px rgb(186, 186, 186);
+}
+
 .dashboard .dashboard-main .row .item .item-field{
     padding: 0.5rem 1rem;
     border: 1px solid rgb(231, 231, 231);
     border-radius: 8px;
+    width: 100%;
+}
+
+.dashboard .dashboard-main .row .item .item-field:focus{
+    outline: none;
 }
