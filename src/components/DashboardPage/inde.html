@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Name in Input Field</title>
+  <style>
+    input {
+      padding: 8px;
+      margin-right: 10px;
+      width: 200px;
+    }
+
+    #editBtn {
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Edit Name</h2>
+
+  <!-- Input field for the name -->
+  <input type="text" id="nameInput" value="John Doe" disabled />
+  
+  <!-- Edit button -->
+  <button id="editBtn">Edit</button>
+
+  <script>
+    // JavaScript to handle the Edit button click
+    const inputField = document.getElementById('nameInput');
+    const editButton = document.getElementById('editBtn');
+
+    editButton.addEventListener('click', function() {
+      if (inputField.disabled) {
+        // Enable the input field for editing
+        inputField.disabled = false;
+        inputField.focus(); // Automatically focus the input field
+        editButton.textContent = 'Save'; // Change button text to "Save"
+      } else {
+        // If the field is already enabled, save the changes and disable it
+        inputField.disabled = true;
+        editButton.textContent = 'Edit'; // Change button text back to "Edit"
+        
+        // You can handle the saved name here, e.g., send it to a server or update the UI
+        console.log('Name saved:', inputField.value);
+      }
+    });
+  </script>
+
+</body>
+</html>
